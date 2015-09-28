@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Native Lib Test</string>
+    <string name="action_settings">Settings</string>
+</resources>
