@@ -1,7 +1,5 @@
 apply plugin: 'com.android.model.library'
 
-def jni_path = "src/main/jni/"
-
 model {
     android {
         compileSdkVersion = 23
@@ -31,19 +29,8 @@ model {
     android.ndk {
         moduleName = "nativendk"
         abiFilters += "armeabi-v7a"
-        CFlags += "-g"
-        cppFlags += CFlags
-
-        stl = "gnustl_static"
     }
 
-//    android.sources{
-//        main.jniLibs{
-//            source{
-//                srcDirs += ["\\build\\intermediates\\binaries\\debug\\lib\\armeabi-v7a"]
-//            }
-//        }
-//    }
 }
 
 dependencies {
